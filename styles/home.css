@@ -29,3 +29,10 @@ img {
     padding-left: 10px;
     cursor: pointer;
 }
+
+.post-button {
+    cursor: pointer;
+    height: 30px;
+    margin-top: 20px;
+    color: blue;
+}

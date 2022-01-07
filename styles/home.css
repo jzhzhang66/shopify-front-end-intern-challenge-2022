@@ -1,0 +1,31 @@
+img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.page-container {
+
+}
+
+.post-container {
+    justify-content: center;
+    display: grid;
+    margin: 150px 0;
+}
+
+.post-button-content-container {
+    display: flex;
+
+}
+
+.post-text-content {
+    text-align: left;
+    
+}
+
+.heart {
+    padding-left: 10px;
+    cursor: pointer;
+}

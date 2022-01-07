@@ -43,7 +43,7 @@ export default function Home() {
   }]
   return (
     <div className="page-container">
-      {dummyData.map(curr => <Post postInfo={curr} />)}
+      {dummyData.map(curr => <Post postInfo={curr} key={curr.title} />)}
     </div>
   )
 }

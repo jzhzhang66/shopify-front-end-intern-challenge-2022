@@ -1,12 +1,12 @@
+.page-header {
+    margin: 30px;
+}
+
 img {
     width: 400px;
     height: 500px;
     object-fit: cover;
     border-radius: 5%;
-}
-
-.page-container {
-
 }
 
 .post-container {
@@ -25,14 +25,22 @@ img {
     
 }
 
-.heart {
-    padding-left: 10px;
-    cursor: pointer;
-}
-
 .post-button {
     cursor: pointer;
     height: 30px;
     margin-top: 20px;
     color: blue;
+}
+
+.heart {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.loading {
+	font-size: 4em;
+	color: grey;
+	display: flex;
+    justify-content: center;
+    margin-top: 350px;
 }

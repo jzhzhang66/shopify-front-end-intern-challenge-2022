@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: 'Playfair Display SC', serif;
   background: rgb(94,0,157);
   background: linear-gradient(90deg, rgba(94,0,157,1) 29%, rgba(0,32,149,1) 100%);
   color: white;

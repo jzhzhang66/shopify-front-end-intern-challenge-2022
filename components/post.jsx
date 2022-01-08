@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Icon } from '@iconify/react';
+import { motion } from "framer-motion";
 
 export default function Post({ postInfo }) {
     const [liked, setLiked] = useState(false);
@@ -27,10 +28,28 @@ export default function Post({ postInfo }) {
                 <a>{postInfo.date}</a>
                 <br />
             </div>
-            <Icon className="heart" onClick={() => setLiked(prevLiked => !prevLiked)} icon={liked ? "ant-design:heart-filled" : "ant-design:heart-outlined"} color={liked ? "pink" : "white"} width="50" height="50" />
+            <motion.div               whileHover={{
+                    scale: 1.1
+                }}
+                whileTap={{
+                    scale: 1.05
+                }}>
+            <Icon className="heart" onClick={() => setLiked(prevLiked => !prevLiked)}
+                icon={liked ? "ant-design:heart-filled" : "ant-design:heart-outlined"}
+                color={liked ? "pink" : "white"}
+                width="50"
+                height="50" />
+                </motion.div>
         </div>
-        <button className="post-button" onClick={onClick} >
+        <motion.button className="post-button" onClick={onClick} 
+        whileHover={{
+            scale: 1.04
+        }}
+        whileTap={{
+            scale: 1.02
+        }}
+        >
             {buttonText}
-        </button>
+        </motion.button>
     </div>
 }
